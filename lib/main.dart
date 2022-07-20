@@ -1,9 +1,7 @@
 import 'dart:io';
 
 void main() {
-  dynamic name = 'Sayed';
-
-  name = 50;
-  name = 50.5;
-  name = true;
+  var name;
+  name = 'Sayed';
+  name = 5.5;
 }
