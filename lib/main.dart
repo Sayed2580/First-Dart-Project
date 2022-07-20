@@ -1,7 +1,8 @@
 import 'dart:io';
 
 void main() {
-  var name;
-  name = 'Sayed';
-  name = 5.5;
+  List<String> students = ['Sayed', 'Ali', 'Alawi'];
+
+  // print(students[0]);
+  print(students);
 }
