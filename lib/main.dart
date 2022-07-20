@@ -1,11 +1,11 @@
 import 'dart:io';
 
 void main() {
-  // you cant use duplicate names in set
-  // but you can in list
+  Map<String, int> salries = {'Sayed': 50, 'Samy': 100, 'Kareem': 150};
+  
+  // Map<int, String> students = {99: 'Sayed', 1: 'Samy', 2: 'Kareem'};
 
-  Set<String> students = {'Sayed', 'Sayed', 'Kareem'};
+  // print(students[99]);
 
-List<String> studentsList = students.toList();
-  print(studentsList[1]);
+  print(salries);
 }
