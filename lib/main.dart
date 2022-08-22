@@ -1,9 +1,9 @@
 import 'dart:io';
 
-void main() {
+void main(){
   bool isConnected = false;
 
-  while (isConnected) {
-    print("send notification");
-  }
+  do {
+    print('send notification');
+  } while (isConnected);
 }
