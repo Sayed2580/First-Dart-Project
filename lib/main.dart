@@ -1,9 +1,14 @@
 import 'dart:io';
 
-void main(){
-  bool isConnected = false;
+void main() {
+  print('start program');
+  printMyStrory();
+  print('continue Coding');
+}
 
-  do {
-    print('send notification');
-  } while (isConnected);
+
+void  printMyStrory() {
+  print('my name is Sayed');
+  print('i love coding');
+  print('i want to be a senior programmer');
 }
