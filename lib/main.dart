@@ -1,14 +1,22 @@
 import 'dart:io';
 
 void main() {
-  print('start program');
-  printMyStrory();
-  print('continue Coding');
+   double result = sumNumbers();
+
+  double variable = result + 1;
+
+  print(variable);
 }
 
 
-void  printMyStrory() {
-  print('my name is Sayed');
-  print('i love coding');
-  print('i want to be a senior programmer');
+
+double sumNumbers() {
+  print('Enter first number');
+  double number = double.parse(stdin.readLineSync()!);
+  print('Enter second number');
+  double number2 = double.parse(stdin.readLineSync()!);
+  
+  double result = number + number2;
+  
+  return result;
 }
