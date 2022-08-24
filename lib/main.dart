@@ -1,21 +1,17 @@
 import 'dart:io';
 
 void main() {
-   double result = sumNumbers();
+  double firstNumber = 6;
+  double secondNumber = 6;
 
-  double variable = result + 1;
+   double result = sumNumbers(firstNumber, secondNumber);
 
-  print(variable);
+  print('result = $result');
 }
 
 
 
-double sumNumbers() {
-  print('Enter first number');
-  double number = double.parse(stdin.readLineSync()!);
-  print('Enter second number');
-  double number2 = double.parse(stdin.readLineSync()!);
-  
+double sumNumbers(double number , double number2) {
   double result = number + number2;
   
   return result;
