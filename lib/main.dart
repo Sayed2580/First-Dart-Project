@@ -1,18 +1,11 @@
 import 'dart:io';
 
 void main() {
-  double firstNumber = 6;
-  double secondNumber = 6;
-
-   double result = sumNumbers(firstNumber, secondNumber);
-
-  print('result = $result');
+  printData(firstName: 'Sayed' , secondName: 'Mohammed' , age: 25);
 }
 
-
-
-double sumNumbers(double number , double number2) {
-  double result = number + number2;
-  
-  return result;
+void printData({String? firstName, String? secondName, int? age = 25}) {
+  print('first name is $firstName');
+  print('second name is $secondName');
+  print('age is $age');
 }
