@@ -1,7 +1,14 @@
 import 'dart:io';
 
 void main() {
-  displayName();
+
 }
 
-String displayName() => 'Sayed';
+
+int getNumber() {
+  int x;
+  int y = 50;
+
+
+  return y ==0 ? 100 : -100;
+}
