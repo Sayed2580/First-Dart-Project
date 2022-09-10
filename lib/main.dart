@@ -1,15 +1,11 @@
 import 'dart:io';
 
 void main() {
-  Human Sayed = Human();
-  Sayed.hairColor = 'black';
-  Sayed.hight = 150;
-  Sayed.weight = 50;
+  int result = 50;
 
-  Human Ali = Human();
-  Ali.hight = 170;
-  Ali.weight = 70;
-  Ali.hairColor = 'black';
+  Human Sayed = Human(hairColor: 'black' , hight: 150 , weight: 50);
+
+  Human Ali = Human(hairColor: 'black' , hight: 170 , weight: 70);
 
   print(Sayed.hight);
   print(Ali.hight);
@@ -21,4 +17,10 @@ class Human {
   double? hight;
   double? weight;
   String? hairColor;
+
+  Human({String? hairColor, double? hight, double? weight}) {
+      this.hairColor = hairColor;
+      this.hight = hight;
+      this.weight = weight;
+  }
 }
