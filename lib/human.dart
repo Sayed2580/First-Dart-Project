@@ -5,28 +5,27 @@ class Human {
   String? hairColor;
 
 
- void setNumberOfArms(int numberOfArms) {
-   if(numberOfArms <= 2 && numberOfArms >= 0) {
-     this._numberOfArms = numberOfArms;
-   }
- }
-
- int getNumberOfArms() {
-   return this._numberOfArms;
- }
-
-  Human({
-    int numberOfArms = 2 ,
-    String? hairColor,
-    double? hight,
-    double? weight
-  }) {
-    this.hairColor = hairColor;
-    this.hight = hight;
-    this.weight = weight;
+  set numberOfArms(int numberOfArms) {
+    if (numberOfArms <= 2) {
+      this._numberOfArms = numberOfArms;
+    }
+  }
+  int get numberOfArms {
+    return this._numberOfArms;
   }
 
-  void walk() {
-    print('this human is walking');
-  }
+    Human({
+      int numberOfArms = 2,
+      String? hairColor,
+      double? hight,
+      double? weight
+    }) {
+      this.hairColor = hairColor;
+      this.hight = hight;
+      this.weight = weight;
+    }
+
+    void walk() {
+      print('this human is walking');
+    }
 }
